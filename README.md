@@ -38,6 +38,8 @@ The following endpoints are supported:
 ## Screenshots
 
 ![home-page](https://user-images.githubusercontent.com/72888249/207355016-1054a001-e68f-4536-93b5-13ebd68c35e3.png)
+![register-page](https://user-images.githubusercontent.com/72888249/207467460-24673a99-41c5-49fd-8755-a8ff0d04f4be.png)
+![login-page](https://user-images.githubusercontent.com/72888249/207467519-35c3c764-371e-4a9c-9fb7-36d1f53d02c3.png)
 ![home-page-logged-in](https://user-images.githubusercontent.com/72888249/207356520-32f2bae3-4c02-4445-b6c1-83f66f3a211a.png)
 ![all-contacts](https://user-images.githubusercontent.com/72888249/207357086-fca28bea-e434-4896-9716-40bb5514889b.png)
 ![create-contact](https://user-images.githubusercontent.com/72888249/207357475-54646dba-2be6-4d76-81b8-3e05043a1e61.png)
