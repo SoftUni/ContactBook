@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Contact Book</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="top">
+        <div>
+            <a asp-area="" asp-controller="Home" asp-action="Index"><span>☎📖</span>ContactBook.WebApp</a>
+        </div>
+        <partial name="_LoginPartial" />
+    </header>
+
+    @if (this.User.Identity.IsAuthenticated)
+    {
+        <aside>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Contacts" asp-action="All">Contacts</a></li>
+                <li><a asp-controller="Contacts" asp-action="Create">Create Contact</a></li>
+                <li><a asp-controller="Contacts" asp-action="Search">Search</a></li>
+            </ul>
+        </aside>
+        <main>
+            @RenderBody()
+        </main>
+    }
+    else
+    {
+        <aside></aside>
+        <main>
+            @RenderBody()
+        </main>
+    }
+
+    <footer>
+        <div>
+            &copy; @DateTime.Now.Year - Contact Book
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿@model ContactFormModel
+
+@{
+    ViewBag.Title = "Create Contact";
+}
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+<form asp-action="Create">
+    @await Html.PartialAsync("~/Views/Shared/_ContactFormPartial.cshtml", Model)
+    <div class="d-flex justify-content-center">
+        <input class="btn btn-primary col-7" type="submit" value="Create" />
+    </div>
+    
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

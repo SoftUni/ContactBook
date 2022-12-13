@@ -1,0 +1,49 @@
+﻿@model ContactFormModel
+
+<table class="form">
+    <tr>
+        <th>
+            <label asp-for="FirstName"></label>
+        </th>
+        <td>
+            <input asp-for="FirstName" class="form-control" placeholder="First Name...">
+            <span asp-validation-for="FirstName" class="small text-danger"></span>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            <label asp-for="LastName"></label>
+        </th>
+        <td>
+            <input asp-for="LastName" class="form-control" placeholder="Last Name...">
+            <span asp-validation-for="LastName" class="small text-danger"></span>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            <label asp-for="Email"></label>
+        </th>
+        <td>
+            <input asp-for="Email" class="form-control" placeholder="Email...">
+            <span asp-validation-for="Email" class="small text-danger"></span>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            <label asp-for="PhoneNumber"></label>
+        </th>
+        <td>
+            <input asp-for="PhoneNumber" class="form-control" placeholder="Phone Number...">
+            <span asp-validation-for="PhoneNumber" class="small text-danger"></span>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            <label asp-for="Comments"></label>
+        </th>
+        <td>
+            <textarea asp-for="Comments" class="form-control" placeholder="Comments..."></textarea>
+            <span asp-validation-for="Comments" class="small text-danger"></span>
+        </td>
+    </tr>
+</table>

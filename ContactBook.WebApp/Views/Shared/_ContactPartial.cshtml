@@ -1,0 +1,41 @@
+﻿@model IEnumerable<ContactViewModel>
+
+@foreach (var contact in Model)
+{
+    <table>
+        <tbody>
+            <tr>
+                <th>First Name</th>
+                <td>@contact.FirstName</td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <td>@contact.LastName</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>@contact.Email</td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td>@contact.PhoneNumber</td>
+            </tr>
+            <tr>
+                <th>Comments</th>
+                <td>@contact.Comments</td>
+            </tr>
+            <tr>
+                <th>Action</th>
+                <td>
+                    <form asp-controller="Contacts" asp-action="Delete" asp-route-id="@contact.Id">
+                        <a asp-controller="Contacts" asp-action="Edit" asp-route-id="@contact.Id" class="btn btn-secondary mb-2">Edit</a>
+                        <span></span>
+
+                        <input type="hidden" value="Delete" class="btn btn-secondary mb-2" />
+                        <a onclick="this.parentNode.submit()" class="btn btn-secondary mb-2">Delete</a>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+}
