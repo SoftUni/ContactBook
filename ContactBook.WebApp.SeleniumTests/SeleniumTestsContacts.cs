@@ -33,7 +33,7 @@ namespace ContactBook.WebApp.SeleniumTests
         }
 
         [Test]
-        public void Test_EditTask()
+        public void Test_EditContact()
         {
 
         }
@@ -43,9 +43,9 @@ namespace ContactBook.WebApp.SeleniumTests
 
         }
 
-        private void CreateTask(out string contactFirstName, out string contactLastName)
+        private void CreateContact(out string contactFirstName, out string contactLastName)
         {
-
+            throw new NotImplementedException();
         }
     }
 }
