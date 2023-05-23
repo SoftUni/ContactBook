@@ -27,10 +27,10 @@ The following endpoints are supported:
 - `GET /api/contacts/count` - returns contacts count
 - `GET /api/contacts/:id` - returns a contact by given `id`
 - `GET /api/contacts/search/:keyword` - returns contacts by given `keyword`
-- `POST /api/contacts/create` - create a new event (send a JSON object in the request body, e.g. `{ "first name": "Johnny", "last name": "Depp", "email": "j.depp@mail.com", "phone number": "+12298015369", "comments": "An American actor, producer, and musician. Best in 'Pirates of the Caribbean'" })
-- `PUT /api/contacts/:id` - edit event by `id` (send a JSON object in the request body, holding all fields, e.g. `{ "first name": "Johnny", "last name": "Depp", "email": "j.depp@mail.com", "phone number": "+12298015369", "comments": "An American actor, producer, and musician. Best in 'Pirates of the Caribbean'" }`)
-- `PATCH /api/contacts/:id` - partially edit event by `id` (send a JSON object in the request body, holding the fields to modify, e.g. `{ "email": "johnny.depp@mail.com", "phone number": "+12298015369" }`)
-- `DELETE /api/contacts/:id` - delete event by `id`
+- `POST /api/contacts/create` - create a new (send a JSON object in the request body, e.g. `{ "first name": "Johnny", "last name": "Depp", "email": "j.depp@mail.com", "phone number": "+12298015369", "comments": "An American actor, producer, and musician. Best in 'Pirates of the Caribbean'" })
+- `PUT /api/contacts/:id` - edit contact by `id` (send a JSON object in the request body, holding all fields, e.g. `{ "first name": "Johnny", "last name": "Depp", "email": "j.depp@mail.com", "phone number": "+12298015369", "comments": "An American actor, producer, and musician. Best in 'Pirates of the Caribbean'" }`)
+- `PATCH /api/contacts/:id` - partially edit contact by `id` (send a JSON object in the request body, holding the fields to modify, e.g. `{ "email": "johnny.depp@mail.com", "phone number": "+12298015369" }`)
+- `DELETE /api/contacts/:id` - delete contact by `id`
 - `GET /api/users` - list all users
 - `POST /api/users/login` - logs in an existing user (send a JSON object in the request body, holding all fields, e.g. `{"email": "guest@mail.com", "password": "guest"}`)
 - `POST /api/users/register` - registers a new user (send a JSON object in the request body, holding all fields, e.g. `{ "email": "someUsername@mail.bg", "firstName": "someName", "lastName": "someLastName", "phoneNumber": "+192088877744", "password": "somePassword", "confirmPassword": "somePassword" }`)
